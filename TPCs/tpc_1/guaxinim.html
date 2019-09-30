@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/54f6bf97d9.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript functions for opening/closing the page's index-->
+    <script>
+        function openSlideIndex() {
+            document.getElementById('index').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';
+        }
+
+        function closeSlideIndex() {
+            document.getElementById('index').style.width = '0';
+            document.getElementById('content').style.marginLeft = '0';
+        }
+
+    </script>
+    <title>TPC 1 - Guaxinim</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-text">
+            <h1>Guaxinim</h1>
+            <h3><i>Procyon Lotor</i></h3>
+        </div>
+    </div>
+    <div id="content">
+        <!-- Page header -->
+
+        <!-- Animal redlist bar -->
+        <!-- Responsive index button, on the left -->
+        <!-- Dropdown text on the "?" icon, on the right -->
+        <div class="redlist">
+            <span class="index-icon">
+                <a href="#" onclick="openSlideIndex();">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </span>
+            <div class="naoAvaliado">Não avaliado</div>
+            <div class="semDados">Sem dados</div>
+            <div class="poucoPreocupante">Pouco Preocupante</div>
+            <div class="quaseAmeacada">Quase ameaçada</div>
+            <div class="vulneravel">Vulnerável</div>
+            <div class="emPerigo">Em perigo</div>
+            <div class="criticamentePerigo">Criticamente em perigo</div>
+            <div class="extintaNatureza">Extinta na natureza</div>
+            <div class="extinta">Extinta</div>
+            <div class="info">
+                <i class="far fa-question-circle"></i>
+                <div class="redlist-info-dropdown">
+                    <p>Lista Vermelha de Espécies Ameaçadas, divulgada pela <a href="https://www.iucnredlist.org/">IUCN</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page main content -->
+
+        <!-- Index -->
+        <div id="index" class="sidebar">
+            <b>-- Índice --</b>
+            <a href="#" class="close" onclick="closeSlideIndex()">
+                <i class="fas fa-times"></i>
+            </a>
+            <a href="#sobre">Sobre o Guaxinim</a>
+            <a href="#habitat">Habitat</a>
+            <a href="#comportamento">Comportamento</a>
+            <a href="#alimentacao">Alimentação</a>
+            <a href="#reproducao">Reprodução</a>
+            <a href="#conservacao">Conservação</a>
+            <a href="#taxonomia">Taxonomia</a>
+            <a href="#distribuicaoGeo">Distribuição Geográfica</a>
+            <a href="#galeria">Galeria de Imagens</a>
+        </div>
+
+        <div class="container">
+            <div class="texto">
+                <!-- Textual content -->
+                <h2 id="sobre">Sobre o Guaxinim</h2>
+                <p>
+                    Distingue-se pela máscara facial negra, focinho pontiagudo e cauda anelada. Os dedos são 5 em todos
+                    os
+                    membros, e os das patas anteriores têm muita destreza para manipulação de alimentos. A cor da
+                    pelagem
+                    varia
+                    com o habitat sendo mais escura nas populações da floresta.
+                </p>
+
+                <h2 id="habitat">Habitat</h2>
+                <p>
+                    O habitat preferido do guaxinim são florestas próximas à água e pântanos. Durante o dia, ele dorme
+                    em
+                    árvores ocas, buracos em pedras ou no chão. É muito adaptável e, hoje, é encontrado também em áreas
+                    urbanas, sendo também encontrado como espécie invasora na Alemanha, áreas da antiga URSS e Japão.
+                </p>
+
+                <div class="row">
+                    <div class="column">
+                        <a target="_blank" href="img/raccoon_habitat1.jpg">
+                            <img src="img/raccoon_habitat1.jpg" alt="Habitat 1" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a target="_blank" href="img/raccoon_habitat2.jpg">
+                            <img src="img/raccoon_habitat2.jpg" alt="Habitat 2" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+
+                <h2 id="comportamento">Comportamento</h2>
+                <p>
+                    O guaxinim dorme o dia todo e sai à noite para procurar comida. Ele persegue sua presa em águas
+                    rasas
+                    ou no
+                    chão, arranhando, virando e examinando de perto assim que a vítima é capturada. No entanto, ele só
+                    a
+                    consome se o cheiro for aprovado por seu apurado faro.
+                </p>
+                <p>
+                    Espécie territorial e muito adaptável. O território do macho pode incluir o território de várias
+                    fêmeas.
+                    É omnívora oportunista e alimenta-se de forma solitária ou em grupo.
+                </p>
+                <p>
+                    Possui hábitos essencialmente terrestres, entretanto é bastante experiente para subir em árvores e
+                    muito
+                    bom
+                    nadador. Possui também hábitos noturnos e pode viver tanto sozinho quanto em par.
+                </p>
+                <p>
+                    Em áreas frias, os mapaches passam o inverno em tocas e buracos nas árvores. Apesar de dormirem
+                    profundamente, eles não hibernam, saindo de seu esconderijo assim que o tempo esquenta um pouco.
+                </p>
+
+                <h2 id="alimentacao">Alimentação</h2>
+                <p>Costuma se alimentar de moluscos, caranguejos, sapos, peixes, e ainda de outros vertebrados menores,
+                    frutas
+                    e
+                    insetos, tendo o cuidado de lavar bem os alimentos antes de ingeri-los. São capazes de buscar
+                    alimentos
+                    enterrados de até cinco centímetros.</p>
+
+                <h2 id="reproducao">Reprodução</h2>
+                <p>Os machos acasalam com muitas fêmeas, enquanto as fêmeas aceitam apenas um pretendente. Os machos,
+                    que,
+                    quase
+                    sempre, são pacíficos, costumam brigar entre si com muita ferocidade durante a época do
+                    acasalamento.
+                    Na
+                    primavera, a fêmea normalmente tem de três a cinco filhotes depois de nove semanas de gestação e
+                    cuida
+                    sozinha
+                    da ninhada. A família continua unida por um ano aproximadamente, quando os jovens guaxinins deixam,
+                    então,
+                    a
+                    companhia da mãe.</p>
+
+                <h2 id="conservacao">Conservação</h2>
+                <p>É relativamente comum e tão adaptável que parece beneficiar com as populações humanas. No entanto, é
+                    alvo de
+                    fatores de ameaça regionais como a caça desportiva e para obtenção da pele, o envenenamento e os
+                    atropelamentos.</p>
+
+                <h2 id="taxonomia">Taxonomia</h2>
+                <table>
+                    <tr>
+                        <th>- Reino</th>
+                        <td>Animalia</td>
+                    <tr>
+                        <th>-- Subreino</th>
+                        <td>Bilateria</td>
+                    </tr>
+                    <tr>
+                        <th>-- Infrarreino</th>
+                        <td>Deuterostomia</td>
+                    </tr>
+                    <tr>
+                        <th>- Filo</th>
+                        <td>Chordata</td>
+                    </tr>
+                    <tr>
+                        <th>-- Subfilo</th>
+                        <td>Vertebrata</td>
+                    </tr>
+                    <tr>
+                        <th>-- Infrafilo</th>
+                        <td>Gnathostomata</td>
+                    </tr>
+                    <tr>
+                        <th>-- Superclasse</th>
+                        <td>Tetrapoda</td>
+                    </tr>
+                    <tr>
+                        <th>- Classe</th>
+                        <td>Mammalia</td>
+                    </tr>
+                    <tr>
+                        <th>-- Subclasse</th>
+                        <td>Theria</td>
+                    </tr>
+                    <tr>
+                        <th>-- Infraclasse</th>
+                        <td>Eutheria</td>
+                    </tr>
+                    <tr>
+                        <th>- Ordem</th>
+                        <td>Carnivora</td>
+                    </tr>
+                    <tr>
+                        <th>-- Subordem</th>
+                        <td>Caniformia</td>
+                    </tr>
+                    <tr>
+                        <th>- Família</th>
+                        <td>Procyonidae</td>
+                    </tr>
+                    <tr>
+                        <th>- Género</th>
+                        <td>Procyon</td>
+                    </tr>
+                    <tr>
+                        <th>- Espécie</th>
+                        <td>Procyon lotor</td>
+                    </tr>
+                </table>
+                <h2 id="distribuicaoGeo">Distribuição Geográfica</h2>
+                <p>
+                    Estes animais são encontrados nas Américas e são conhecidos também pelo nome estadunidense raccoon.
+                    No
+                    Brasil, "guaxinim"e "jaguacinim" referem-se a vários Procionídeos, especialmente ao Procyon
+                    cancrivorus. Existem também na Europa central e no Cáucaso e no Japão, onde se estabeleceram
+                    após
+                    fugas
+                    de indivíduos vindos de outras regiões.
+                </p>
+                <figure>
+                    <img src="img/racoon_geo.png" alt="raccoon_geo" style="width:100%">
+                    <figcaption>Nativo das áreas a vermelho, introduzido nas áreas a azul</figcaption>
+                </figure>
+
+                <h2 id="galeria">Galeria de Imagens</h2>
+
+                <div class="row">
+                    <div class="column">
+                        <a target="_blank" href="img/raccoon_gallery1.jpg">
+                            <img src="img/raccoon_gallery1.jpg" alt="Raccon 1" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a target="_blank" href="img/raccoon_gallery2.jpg">
+                            <img src="img/raccoon_gallery2.jpg" alt="Raccon 2" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a target="_blank" href="img/raccoon_gallery3.jpg">
+                            <img src="img/raccoon_gallery3.jpg" alt="Raccon 3" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="column">
+                            <a target="_blank" href="img/raccoon_gallery4.jpg">
+                                <img src="img/raccoon_gallery4.jpg" alt="Raccon 4" style="width:100%">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a target="_blank" href="img/raccoon_gallery5.jpg">
+                                <img src="img/raccoon_gallery5.jpg" alt="Raccon 5" style="width:100%">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a target="_blank" href="img/raccoon_gallery6.jpg">
+                                <img src="img/raccoon_gallery6.jpg" alt="Raccon 6" style="width:100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="column">
+                                <a target="_blank" href="img/raccoo_gallery7.jpg">
+                                    <img src="img/raccoo_gallery7.jpg" alt="Raccon 7" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a target="_blank" href="img/raccoon_gallery8.jpeg">
+                                    <img src="img/raccoon_gallery8.jpeg" alt="Raccon 8" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a target="_blank" href="img/raccoon_gallery9.png">
+                                    <img src="img/raccoon_gallery9.png" alt="Raccon 9" style="width:100%">
+                                </a>
+                            </div>
+                        </div>
+
+            </div>
+            <div class="animalCard">
+                <img class="animalAvatar" src="img/raccoon_avatar2.jpg" alt="raccoon">
+                <p>Guaxinim</p>
+
+                <h2>- Informações Científicas -</h2>
+
+                <h3>Reino</h3>
+                <p><i>Animalia</i></p>
+
+                <h3>Filo</h3>
+                <p><i>Chordata</i></p>
+
+                <h3>Classe</h3>
+                <p><i>Mammalia</i></p>
+
+                <h3>Ordem</h3>
+                <p><i>Carnivora</i></p>
+
+                <h3>Família</h3>
+                <p><i>Procyonidae</i></p>
+
+                <h3>Género</h3>
+                <p><i>Procyon</i></p>
+
+                <h3>Nome Científico</h3>
+                <p><i>Procyon Lotor</i></p>
+
+                <h2>- Sobrevivência -</h2>
+
+                <h3>Dieta</h3>
+                <p>Omnívora</p>
+
+                <h3>Presa Principal</h3>
+                <p>Peixe, Nozes, Bagas, Milho</p>
+
+                <h3>Predadores</h3>
+                <p>Lince, Raposas, Lobos, Leões da Montanha</p>
+
+                <h3>Reprodução</h3>
+                <p>Vivípara</p>
+
+                <h3>Expectativa de Vida</h3>
+                <p>2 - 3 anos (Natureza)</p>
+
+                <h3>Estado de Conservação</h3>
+                <p>Pouco Preocupante</p>
+
+                <h2>- Características- </h2>
+
+                <h3>Peso</h3>
+                <p>3,5 - 9 kg</p>
+
+                <h3>Tamanho</h3>
+                <p>Comprimento: 44 - 62 cm</p>
+                <p>Altura: 23 - 30 cm</p>
+
+                <h3>Velocidade</h3>
+                <p>16 - 24 km/h</p>
+
+                <h3>Tamanho relativo a uma pessoa de 1,8 m</h3>
+                <img class="size" src="img/raccoon_size.gif" alt="raccoon">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
