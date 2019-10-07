@@ -2,4 +2,4 @@
 (b) - //CONCEL[not(normalize-space(.)=preceding::CONCEL/normalize-space(data()))]
 (c) - //DESCRI[contains(../CONCEL,'Montalegre')]
 (d) - count(//IDENTI[../contains(CONCEL,'Amares')])  
-(e) - count(//IDENTI[contains(.,'castro')])
+(e) - count(//DESCRI/LIGA/@TERMO[contains(.,'povoado fortificado')])
