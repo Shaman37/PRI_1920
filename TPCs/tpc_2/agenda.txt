@@ -1,0 +1,5 @@
+(a) - //entrada[contains(./telefone,'253-')]
+(b) - //entrada[not(contains(./telefone,'253-'))]
+(c) - //entrada[contains(nome,'José') or contains(nome,'Maria')]
+(d) - //grupo/entrada/@id
+(e) - //entrada[not(@tipo = 'pessoa')]/@id

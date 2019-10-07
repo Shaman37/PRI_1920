@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project SYSTEM "pr.dtd">
+<project>
+    <info>
+        <id_project>PRI-A75569-TPC2</id_project>
+        <title>Queries em XPath e especificação de DTD</title>
+        <subtitle>PRI - TPC 2</subtitle>
+        <d_begin>30 de Setembro de 2019</d_begin>
+        <d_end>7 de Outubro de 2019</d_end>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </info>
+    <team>
+        <member>
+            <id_student>A75569</id_student>
+            <name>João Pedro Lima Cardoso Leal</name>
+            <email>a75569@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <paragraph> A linguagem XML (<it>eXtended Markup Language</it>) é uma das formas usadas para distribuir informação na internet,
+            desempenhando um papel muito importante nos sistemas dos dias de hoje. Assim sendo e, de
+            forma a recolher esta mesma informação, convém que a navegação sobre os elementos e
+            atributos presente no documento seja rápida e eficiente. É aqui que entra
+                o <b>XPath</b>, que usa expressões de caminho, parecidas com as que são usadas nos
+            sistemas de ficheiros dos computadores atuais, podendo recorrer a funções, predicados
+            e/ou eixos (<it>XPath Axes</it>) que ajudem a filtrar a informação que nos é relevante.</paragraph>
+        <paragraph> Esta foi a primeira parte do TPC que ajudou a consolidar os fundamentos desta
+            linguagem assim como permitiu explorar outros não abordados.</paragraph>
+        <paragraph> A segunda parte deste trabalho passa por apresentar informação e os resultados
+            obtidos neste TPC. Para tal, usamos o DTD (<it>Document Type Definition</it>) que define
+            a estrutura e quais os elementos e atributos legais de um ficheiro XML. Por outras
+            palavras, o DTD é usado para validar se um ficheiro XML é válido ou não, garantindo
+            assim a troca de informação de forma válida.</paragraph>
+    </abstract>
+    <resources>
+        <resource path="./pr.dtd">Ficheiro DTD;</resource>
+        <resource path="./pr.xml">Ficheiro XML;</resource>
+        <resource path="./arq.txt">Queries XPath relativas aos <b>arqueossítios</b>;</resource>
+        <resource path="./agenda.txt">Queries XPath relativas à <b>agenda</b>;</resource>
+    </resources>
+    <date>1 de Outubro de 2019</date>
+</project>

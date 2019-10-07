@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT project (info,team,abstract,resources,date) >
+
+<!-- INFO -->
+<!ELEMENT info (id_project,title,subtitle?,d_begin,d_end,supervisor) >
+<!ELEMENT id_project (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT d_begin (#PCDATA) >
+<!ELEMENT d_end (#PCDATA) >
+<!ELEMENT supervisor (name,email,website) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT website (#PCDATA) >
+
+<!-- EQUIPA -->
+<!ELEMENT team (member)+ >
+<!ELEMENT member (id_student,name,email) >
+<!ELEMENT id_student (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+
+<!-- TEXTO -->
+<!ELEMENT abstract (#PCDATA|paragraph)* >
+<!ELEMENT paragraph (#PCDATA|b|it|link)* >
+<!ELEMENT b (#PCDATA) >
+<!ELEMENT it (#PCDATA) >
+<!ELEMENT link (#PCDATA) >
+
+<!-- RECURSOS-->
+<!ELEMENT resources (resource)* >
+<!ELEMENT resource (#PCDATA|b|it)* >
+
+<!-- DATA DE RESOLUÇÃO -->
+<!ELEMENT date (#PCDATA) >
+
+<!ATTLIST resource
+            path CDATA #REQUIRED>
+            
+<!ATTLIST link
+            path CDATA #REQUIRED>
