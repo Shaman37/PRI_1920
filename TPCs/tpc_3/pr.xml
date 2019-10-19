@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pr SYSTEM "file:/home/shaman/Desktop/UM/semestre_1/ano_4/PLC/PRI/Aulas/aula_3/pr_oficial.dtd">
 <pr>
     <meta>
         <keyname>PRI-A75569-TPC3</keyname>
@@ -14,12 +13,6 @@
         </supervisor>
     </meta>
     <workteam>
-        <member>
-            <identifier>A75569</identifier>
-            <name>João Pedro Lima Cardoso Leal</name>
-            <email>a75569@alunos.uminho.pt</email>
-            <photo path="./shaman.jpg"/>
-        </member>
         <member>
             <identifier>A75569</identifier>
             <name>João Pedro Lima Cardoso Leal</name>
@@ -54,10 +47,5 @@
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.dtd">pr.dtd</deliverable>
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.xml">pr.xml</deliverable>
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.xsl">pr.xsl</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/arq.xml">arq.xml</deliverable>
-        <!-- 
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/arq.xsl">arq.xsl</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/website">Website Arqueossítios</deliverable>
-         -->
     </deliverables>
 </pr>
