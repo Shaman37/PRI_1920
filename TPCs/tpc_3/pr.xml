@@ -47,5 +47,9 @@
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.dtd">pr.dtd</deliverable>
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.xml">pr.xml</deliverable>
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.xsl">pr.xsl</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.html">pr.html</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/arq.xml">arq.xml</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/arq.xsl">arq.xsl</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/website">website</deliverable>
     </deliverables>
 </pr>

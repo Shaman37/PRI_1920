@@ -21,12 +21,41 @@
                         }
                         img {
                             border-radius: 50%;
-                        }</style>
+                        }
+                        
+                        .tab {
+                        border-collapse: collapse;
+                        width: 100%;
+                        } 
+                        .tab th {
+                        
+                        padding: 8px;
+                        text-align: center;
+                        border-bottom: 1px solid #ddd;
+                        }
+                        .tab td {
+                        
+                        padding: 8px;
+                        text-align: center;
+                        border-bottom: 1px solid #ddd;
+                        } 
+                        .tab tr:hover {
+                        background-color:#f5f5f5;
+                        }
+                        div {
+                        text-align: center;
+                        }
+                    </style>
                 </head>
                 <body>
                     <h1>TPC 3</h1>
                     <xsl:apply-templates/>
-
+                   
+                    <hr width="75%"/>
+                    <!-- Data de conclusão -->
+                    <div>
+                    <xsl:value-of select="format-date(current-date(), '[D01]/[M01]/[Y0001]')"/>
+                    </div>
                 </body>
             </html>
         </xsl:result-document>
@@ -38,27 +67,30 @@
             <xsl:value-of select="keyname"/>
         </h4>
         <hr width="80%"/>
-        <table align="center" width="50%">
+        <table class="tab">
             <tr>
-                <th>Supervisor: </th>
-                <td>
+                <th colspan="3">Supervisor: </th>
+                <td colspan="3">
                     <a target="blank" href="{supervisor/homepage}">
                         <xsl:value-of select="supervisor/name"/>
                     </a>
                 </td>
-                <th>Email:</th>
-                <td>
+             </tr>
+            <tr>
+                <th colspan="3">Email:</th>
+                <td colspan="3">
                     <a href="mailto:{supervisor/email}">
                         <xsl:value-of select="supervisor/email"/>
                     </a>
                 </td>
             </tr>
-            
             <tr>
                 <th>Begin Date: </th>
                 <td>
                     <xsl:value-of select="bdate"/>
                 </td>
+                <td>|</td>
+                <td>|</td>
                 <th>End Date: </th>
                 <td>
                     <xsl:value-of select="edate"/>
@@ -76,10 +108,10 @@
     
     <!-- Member tag -->
     <xsl:template match="member">
-        <table align="center" width="50%">
+        <table class="tab">
                 <tr>
-                    <td rowspan="4" width="60%">
-                        <img src="{photo/@path}" width="25%"/>
+                    <td rowspan="4" width="50%">
+                        <img src="{photo/@path}" width="15%"/>
                     </td>
                     <th colspan="2">Student ID:</th>
                     <td align="center">
@@ -160,15 +192,20 @@
     <!-- 'Deliverables' tag template, containing links to the Project's resources -->
     <xsl:template match="deliverables">
         <h2 align="center">Deliverables</h2>
-        <ul>
+        <table class="tab">
             <xsl:apply-templates/>
-        </ul>
+        </table>
     </xsl:template>
     
     <!-- Deliverable tag -->
     <xsl:template match="deliverable">
-        <li>
-            <a target="blank" href="{@path}"><xsl:value-of select="."/></a>
-        </li>
+        <tr>
+            <td>
+                <a target="blank" href="{@path}">
+                    <xsl:value-of select="."/>
+                </a>
+            </td>
+        </tr>
     </xsl:template>
+
 </xsl:stylesheet>

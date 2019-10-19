@@ -15,6 +15,30 @@
          img {
          border-radius: 50%;
          }
+         
+         .tab {
+         border-collapse: collapse;
+         width: 100%;
+         } 
+         .tab th {
+         
+         padding: 8px;
+         text-align: center;
+         border-bottom: 1px solid #ddd;
+         }
+         .tab td {
+         
+         padding: 8px;
+         text-align: center;
+         border-bottom: 1px solid #ddd;
+         } 
+         .tab tr:hover {
+         background-color:#f5f5f5;
+         }
+         div {
+         text-align: center;
+         }
+         
       </style>
    </head>
    <body>
@@ -22,20 +46,24 @@
       
       <h4>PRI-A75569-TPC3</h4>
       <hr width="80%"></hr>
-      <table align="center" width="50%">
+      <table class="tab">
          <tr>
-            <th>Supervisor: </th>
-            <td>
+            <th colspan="3">Supervisor: </th>
+            <td colspan="3">
                <a target="blank" href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</a>
             </td>
-            <th>Email:</th>
-            <td>
+         </tr>
+         <tr>
+            <th colspan="3">Email:</th>
+            <td colspan="3">
                <a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a>
             </td>
          </tr>
          <tr>
             <th>Begin Date: </th>
             <td>7 de Outubro de 2019</td>
+            <td>|</td>
+            <td>|</td>
             <th>End Date: </th>
             <td>21 de Outubro de 2019</td>
          </tr>
@@ -44,10 +72,10 @@
       
       <h2>Equipa</h2>
       
-      <table align="center" width="50%">
+      <table class="tab">
          <tr>
-            <td rowspan="4" width="60%">
-               <img src="./shaman.jpg" width="25%"></img>
+            <td rowspan="4" width="50%">
+               <img src="./shaman.jpg" width="15%"></img>
             </td>
             <th colspan="2">Student ID:</th>
             <td align="center">A75569</td>
@@ -126,21 +154,53 @@
       <hr width="40%"></hr>
       
       <h2 align="center">Deliverables</h2>
-      <ul>
+      <table class="tab">
          
-         <li>
-            <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.dtd">pr.dtd</a>
-         </li>
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.dtd">pr.dtd</a>
+            </td>
+         </tr>
          
-         <li>
-            <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.xml">pr.xml</a>
-         </li>
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.xml">pr.xml</a>
+            </td>
+         </tr>
          
-         <li>
-            <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.xsl">pr.xsl</a>
-         </li>
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.xsl">pr.xsl</a>
+            </td>
+         </tr>
          
-      </ul>
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/pr.html">pr.html</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/arq.xml">arq.xml</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/arq.xsl">arq.xsl</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3/website">website</a>
+            </td>
+         </tr>
+         
+      </table>
       
+      <hr width="75%"></hr>
+      <div>19/10/2019</div>
    </body>
 </html>
