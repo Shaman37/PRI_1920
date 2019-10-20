@@ -9,6 +9,6 @@ https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_1
 
 https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_2
 
-- Transformações com XSLT
+- TPC 3: Transformações com XSLT
 
 https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_3
