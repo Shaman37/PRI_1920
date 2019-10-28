@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <head>
+      <title>TPC 3</title>
+      <meta charset="UTF-8"></meta>
+      <style>
+         h1,
+         h2,
+         h3,
+         h4 {
+         text-align: center;
+         }
+         th {
+         text-align: right;
+         }
+         img {
+         border-radius: 50%;
+         }
+         
+         .tab {
+         border-collapse: collapse;
+         width: 100%;
+         } 
+         .tab th {
+         
+         padding: 8px;
+         text-align: center;
+         border-bottom: 1px solid #ddd;
+         }
+         .tab td {
+         
+         padding: 8px;
+         text-align: center;
+         border-bottom: 1px solid #ddd;
+         } 
+         .tab tr:hover {
+         background-color:#f5f5f5;
+         }
+         div {
+         text-align: center;
+         }
+         
+      </style>
+   </head>
+   <body>
+      <h1>TPC 3</h1>
+      
+      <h4>PRI-A75569-TPC3</h4>
+      <hr width="80%"></hr>
+      <table class="tab">
+         <tr>
+            <th colspan="3">Supervisor: </th>
+            <td colspan="3">
+               <a target="blank" href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</a>
+            </td>
+         </tr>
+         <tr>
+            <th colspan="3">Email:</th>
+            <td colspan="3">
+               <a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a>
+            </td>
+         </tr>
+         <tr>
+            <th>Begin Date: </th>
+            <td>21 de Outubro de 2019</td>
+            <td>|</td>
+            <td>|</td>
+            <th>End Date: </th>
+            <td>28 de Outubro de 2019</td>
+         </tr>
+      </table>
+      <hr width="65%"></hr>
+      
+      <h2>Equipa</h2>
+      
+      <table class="tab">
+         <tr>
+            <td rowspan="4" width="50%">
+               <img src="./shaman.jpg" width="15%"></img>
+            </td>
+            <th colspan="2">Student ID:</th>
+            <td align="center">A75569</td>
+         </tr>
+         <tr>
+            <th colspan="2">Nome:</th>
+            <td align="center">João Pedro Lima Cardoso Leal</td>
+         </tr>
+         <tr>
+            <th colspan="2">Email:</th>
+            <td align="center">
+               <a href="mailto:a75569@alunos.uminho.pt">a75569@alunos.uminho.pt</a>
+            </td>
+         </tr>
+         <tr>
+            <th colspan="2">Github:</th>
+            <td align="center">
+               <a target="blank" href="https://github.com/Shaman37">
+                  https://github.com/Shaman37
+                  
+               </a>
+            </td>
+         </tr>
+      </table>
+      <hr width="50%"></hr>
+      
+      
+      <h2>Servidores em NodeJS</h2>
+      <h4></h4>
+      <br></br>
+      
+      <p align="center">
+         Este TPC baseia-se na criação de um servidor em 
+         <b>nodeJS</b>, referente à gestão de um arquivo sonoro, devendo este responder
+         aos vários pedidos feitos no lado do cliente.O 
+         <b>Node.js</b> é um interpertador de 
+         <b>JavaScript</b> assíncrono com código 
+         <i>Open-Source</i>, onde podemos correr 
+         <i>Scripts</i> do lado do servidor, permitindo a produção de páginas web dinâmicas.
+         
+      </p>
+      
+      
+      <p align="center">
+         No que toca ao servidor este irá receber pedidos na forma  
+         <b>/</b>, 
+         <b>/index</b> ou 
+         <b>/musica/DOC</b>. Nos dois primeiros, o servidor devolve o index da páginas com as várias músicas
+         existentes nos arquivo. No último tipo de pedido, procuramos valor presente na variável
+         
+         <b>DOC</b>, o que irá possibilitar o retorno do ficheiro de música em questão. Note-se que o
+         documento 
+         <i>XML</i> é obtido primeiramente, sendo seguida a obtenção da 
+         <i>stylesheet</i> de conversão para 
+         <i>HTML</i>. 
+         Por fim, o servidor retorna erro quando o método ou o pedido não são suportados.
+         
+      </p>
+      
+      
+      <p align="center"> 
+         Para tal trabalho ser possível, criamos o dataset com vários documentos sonoros individuais
+         presentes no ficheiro 
+         <b>arq-son-EVO.xml</b>, sendo que a cada um dos nomes destes ficheiros foi associado um identificador que
+         irá ser utilizado para processar o pedido feito ao servidor.
+         Para além disso foi criado uma stylesheet XSL (
+         <b>"doc2html.xsl"</b>) que irá transformar os documentos individuais 
+         <b>XML</b>
+         em formato 
+         <b>HTML</b>. Este ficheiro é depois enviado pelo servidor, para que seja carregada uma página
+         contendo a informação presente no documento 
+         <b>XML</b> em questão, sendo a informação apresentadda da forma correta.
+         
+      </p>
+      
+      
+      <hr width="40%"></hr>
+      
+      <h2 align="center">Deliverables</h2>
+      <table class="tab">
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.dtd">pr.dtd</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.xml">pr.xml</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.xsl">pr.xsl</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.html">pr.html</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/arq-son-EVO.xml">arq-son-EVO.xml</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/data_gen.xsl">data_gen.xsl</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/index_gen.xsl">index_gen.xsl</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/arq_son_EVO.js">arq_son_EVO.js</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/website">website</a>
+            </td>
+         </tr>
+         
+      </table>
+      
+      <hr width="75%"></hr>
+      <div>28/10/2019</div>
+   </body>
+</html>

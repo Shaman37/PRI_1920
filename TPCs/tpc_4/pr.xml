@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRI-A75569-TPC3</keyname>
+        <title>Servidores em NodeJS</title>
+        <bdate>21 de Outubro de 2019</bdate>
+        <edate>28 de Outubro de 2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A75569</identifier>
+            <name>João Pedro Lima Cardoso Leal</name>
+            <email>a75569@alunos.uminho.pt</email>
+            <photo path="./shaman.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+         <p>
+            Este TPC baseia-se na criação de um servidor em <b>nodeJS</b>, referente à gestão de um arquivo sonoro, devendo este responder
+            aos vários pedidos feitos no lado do cliente.O <b>Node.js</b> é um interpertador de <b>JavaScript</b> assíncrono com código <i>Open-Source</i>, onde podemos correr <i>Scripts</i> do lado do servidor, permitindo a produção de páginas web dinâmicas.
+        </p>
+        
+        <p>
+            No que toca ao servidor este irá receber pedidos na forma  <b>/</b>, <b>/index</b> ou <b>/musica/DOC</b>. Nos dois primeiros, o servidor devolve o index da páginas com as várias músicas existentes nos arquivo. No último tipo de pedido, procuramos valor presente na variável <b>DOC</b>, o que irá possibilitar o retorno do ficheiro de música em questão. Note-se que o documento <i>XML</i> é obtido primeiramente, sendo seguida a obtenção da <i>stylesheet</i> de conversão para <i>HTML</i>. 
+            Por fim, o servidor retorna erro quando o método ou o pedido não são suportados.
+        </p>
+
+        <p> 
+            Para tal trabalho ser possível, criamos o dataset com vários documentos sonoros individuais presentes no ficheiro <b>arq-son-EVO.xml</b>, sendo que a cada um dos nomes destes ficheiros foi associado um identificador que irá ser utilizado para processar o pedido feito ao servidor.
+            Para além disso foi criado uma stylesheet XSL (<b>"doc2html.xsl"</b>) que irá transformar os documentos individuais <b>XML</b>
+            em formato <b>HTML</b>. Este ficheiro é depois enviado pelo servidor, para que seja carregada uma página
+            contendo a informação presente no documento <b>XML</b> em questão, sendo a informação apresentadda da forma correta.
+        </p>
+
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.dtd">pr.dtd</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.xml">pr.xml</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.xsl">pr.xsl</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.html">pr.html</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/arq-son-EVO.xml">arq-son-EVO.xml</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/data_gen.xsl">data_gen.xsl</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/index_gen.xsl">index_gen.xsl</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/arq_son_EVO.js">arq_son_EVO.js</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/website">website</deliverable>
+    </deliverables>
+</pr>
