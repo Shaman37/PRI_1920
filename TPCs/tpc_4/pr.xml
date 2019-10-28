@@ -46,6 +46,7 @@
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/arq-son-EVO.xml">arq-son-EVO.xml</deliverable>
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/data_gen.xsl">data_gen.xsl</deliverable>
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/index_gen.xsl">index_gen.xsl</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/doc2html.xsl">doc2html.xsl</deliverable>
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/arq_son_EVO.js">arq_son_EVO.js</deliverable>
         <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/website">website</deliverable>
     </deliverables>
