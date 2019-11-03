@@ -1,0 +1,71 @@
+[
+    {
+        "id_aluno": "1",
+        "nome": "João Leal",
+        "curso": "MIEI",
+        "email": "mail1@gmail.com",
+        "morada": "Braga",
+        "notas": []
+    },
+    {
+        "id_aluno": "2",
+        "nome": "Manuel Monteiro",
+        "curso": "MIEI",
+        "email": "mail2@gmail.com",
+        "morada": "Braga",
+        "notas": [
+            {
+                "disciplina": "PRI",
+                "indicador": "TPC1",
+                "nota": "20"
+            }
+        ]
+    },
+    {
+        "id_aluno": "3",
+        "nome": "João Vieira",
+        "curso": "MIEI",
+        "email": "mail3@gmail.com",
+        "morada": "Braga",
+        "notas": [
+            {
+                "disciplina": "PLC",
+                "indicador": "TPC1",
+                "nota": "20"
+            },
+            {
+                "disciplina": "PLC",
+                "indicador": "TPC2",
+                "nota": "20"
+            }
+        ]
+    },
+    {
+        "nome": "Andreia Milhazes",
+        "curso": "Psicologia",
+        "email": "mail4@gmail.com",
+        "morada": "Braga",
+        "id_aluno": "oPs2NxOV6d5CPEgSs8sMY",
+        "notas": [
+            {
+                "disciplina": "PSCPTG",
+                "indicador": "TP1",
+                "nota": "20"
+            }
+        ]
+    },
+    {
+        "nome": "Frederico Pinto",
+        "curso": "MIEI",
+        "email": "riverlei@gmail.com",
+        "morada": "Braga",
+        "id_aluno": "-tSQsmbfwZhuhH86gbxPF",
+        "notas": [
+            {
+                "disciplina": "PRI",
+                "indicador": "TPC5",
+                "nota": "20"
+            }
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+extends layout
+block content
+    .w3-container
+        header.w3-container.w3-indigo.w3-center
+            h2 Página do Aluno
+        
+        br
+
+        .w3-card-4
+        header.w3-container.w3-indigo.w3-center
+            h3 Dados do Aluno
+
+        table.w3-table-all.w3-hoverable
+            <thead>
+              tr.w3-black
+                th.w3-center Número de Aluno
+                th.w3-center Nome 
+                th.w3-center Curso
+                th.w3-center Email    
+                th.w3-center Morada
+                
+            </thead>
+                tr
+                    td.w3-center= aluno.id_aluno
+                    td.w3-center= aluno.nome
+                    td.w3-center= aluno.curso
+                    td.w3-center= aluno.email
+                    td.w3-center= aluno.morada
+        br
+        
+        .w3-card-4
+            header.w3-container.w3-indigo.w3-center
+                h3 Notas do Aluno
+         
+            table.w3-table-all.w3-hoverable
+                each nota in aluno.notas
+                    tr      
+                        <th class="w3-center w3-black" style="width:5%"> #{nota.disciplina} </th>
+                        <td class="w3-center" style="width:45%"> #{nota.indicador} </td>
+                        <td class="w3-center" style="width:45%"> #{nota.nota} </td>
+                        td.w3-right 
+                            button.w3-button.w3-round.w3-red(onclick="removeNota('" + aluno.id_aluno + "','" + nota.disciplina + "','" + nota.indicador +"') ") Remover 
+
+        br
+            
+        .w3-card-4
+            header.w3-container.w3-indigo.w3-center
+                h3 Adicionar nota
+            
+            .w3-container
+                form.w3-container(action='/alunos/'+ aluno.id_aluno + '/notas' method='POST')
+                    label
+                        b Disciplina
+                    input.w3-input.w3-border.w3-light-grey(type="text", name="disciplina")
+
+                    label
+                        b Indicador
+                    input.w3-input.w3-border.w3-light-grey(type="text", name="indicador")
+
+                    label
+                        b Nota
+                    input.w3-input.w3-border.w3-light-grey(type="text", name="nota")
+
+                    .w3-center
+                        input.w3-btn.w3-green.w3-margin(type='submit' value='Adicionar')
+                        
+        footer.w3-container.w3-indigo.w3-center.w3-margin-top
+            <p>PRI - TPC 5</p>
