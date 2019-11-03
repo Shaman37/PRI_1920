@@ -7,7 +7,7 @@
         <xsl:result-document href="pr.html">
             <html>
                 <head>
-                    <title>TPC 3</title>
+                    <title>TPC 5</title>
                     <meta charset="UTF-8"/>
                     <style>
                         h1,
@@ -48,7 +48,7 @@
                     </style>
                 </head>
                 <body>
-                    <h1>TPC 3</h1>
+                    <h1>TPC 5</h1>
                     <xsl:apply-templates/>
                    
                     <hr width="75%"/>
