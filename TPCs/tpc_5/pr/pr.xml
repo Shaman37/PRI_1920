@@ -21,18 +21,34 @@
         </member>
     </workteam>
     <abstract>
-
+        <p> O Express é uma <i>framework</i> pertencente ao <i>NodeJS</i> que se mostra minimalista
+            e flexível na criação de aplicações WEB ou até Mobile, oferecendo um conjunto de
+                <i>features</i> que ajudam no desenvolvimento deste tipo de aplicações, assim como
+            uma boa performance das mesmasont. </p>
+        <p> Neste TPC, foi proposto a implementação de uma aplicação de "Gestão de Alunos", onde
+            deveriamos responder a diversos pedidos, sendo eles: <b>GET '/'</b> (que lista todos os
+            alunos presentes na BD), <b>GET '/alunos/:id</b> (que apresenta toda a informação de um
+            aluno com determinado ':id'), <b>POST '/alunos'</b> (que permite adicionar um novo aluno
+            à BD), <b>POST '/alunos/:id/notas/</b> (que permite adicionar uma nova nota ao aluno com
+            o <i>id_aluno</i> igual a ':id'), <b>DELETE '/alunos/:id</b> (que remove o aluno em
+            questão da BD) e, por fim, <b>DELETE '/alunos/:id/notas/:disciplina/:indicador</b> (que
+            permite remover a nota referente a um indicador (TP1, TP2, TPC1, T, etc..) e a uma
+            disciplina, de um determinado aluno. </p>
+        <p> Assim sendo e, usando as funcionalidades do Express, foi possível a criação de um
+            servidor em <i>NodeJS</i> capaz de responder aos pedidos acima descritos, usufruindo de
+            dois routeadpores para o efeito: <b>indexRouter</b> (responde a pedidos efetuados em
+            '/') e o <b>alunosRouter</b> (responde a pedidos efetuados em '/alunos').
+        </p>
+        <p> Os resultados obtidos na resolução deste TPC, mostram-se favoráveis e podem ser
+            observados em <i>galunos</i> (presente nos <i>delivverables</i> abaixo). 
+        </p>
+        
     </abstract>
     <deliverables>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.dtd">pr.dtd</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.xml">pr.xml</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.xsl">pr.xsl</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/pr.html">pr.html</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/arq-son-EVO.xml">arq-son-EVO.xml</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/data_gen.xsl">data_gen.xsl</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/index_gen.xsl">index_gen.xsl</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/doc2html.xsl">doc2html.xsl</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/arq_son_EVO.js">arq_son_EVO.js</deliverable>
-        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4/website">website</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_5/pr/pr.dtd">pr.dtd</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_5/pr/pr.xml">pr.xml</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_5/pr/pr.xsl">pr.xsl</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_5/pr/pr.html">pr.html</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_5/galunos">galunos</deliverable>
     </deliverables>
 </pr>
