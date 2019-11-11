@@ -1,5 +1,14 @@
 # PRI_1920
-Processamento e Representação de Informação
+(Processamento e Representação de Informação)
+
+
+## Aulas
+
+- Aula 8 ~ Compositores
+
+https://github.com/Shaman37/PRI_1920/tree/master/Aulas/aula_8/compositores
+
+## TPCs
 
 - TPC 1: Criação de uma página WEB
 
