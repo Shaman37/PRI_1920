@@ -22,3 +22,8 @@ https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_4
 - TPC 5: Servidor em NodeJS, usando Express
 
 https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_5
+
+
+- TPC 6: Servidor em NodeJS + Express, usando BD em MongoDB
+
+https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6
