@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  .w3-container
+        .w3-card-4
+            header.w3-container.w3-red.w3-center
+                  h1 API de Compositores ~ PRI 2019 - Aula 8  
+  
+  table.w3-table.w3-bordered
+    tr
+        th.w3-center.w3-xlarge Método
+        th.w3-center.w3-xlarge Descrição
+        th
+
+    tr.w3-large
+      td.w3-center Listar Compositores
+        
+      td.w3-center Método utilizado para listar todos os compositores presentes na Base de Dados
+    
+      td.w3-center
+        a(href="http://localhost:3000/compositores") Listar Compositores
+    
+    tr.w3-large
+      td.w3-center Pesquisar Compositor por Ano
+        
+      td.w3-center Método utilizado para consultar um consultar na Base de Dados, através de um Ano
+    
+      td.w3-center
+        a(href="http://localhost:3000/compositores?ano=1600") Consultar Compositor (por Ano)
+
+    tr.w3-large
+      td.w3-center Pesquisar Compositor por Periodo
+    
+      td.w3-center Método utilizado para consultar um consultar na Base de Dados, através de um Periodo
+
+      td.w3-center
+        a(href="http://localhost:3000/compositores?periodo=Renascimento") Consultar Compositor (por Periodo)
+
+    tr.w3-large
+      td.w3-center Pesquisar Compositor por Ano e Periodo
+        
+      td.w3-center Método utilizado para consultar um consultar na Base de Dados, através de um Ano e de um Periodo
+    
+      td.w3-center
+        a(href="http://localhost:3000/compositores?ano=1700&periodo=Barroco") Consultar Compositor (por Ano e Periodo)
+
+  ul.w3-ul
+
+    li
