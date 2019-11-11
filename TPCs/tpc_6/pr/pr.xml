@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRI-A75569-TPC6</keyname>
+        <title>Servidores em NodeJS + Express</title>
+        <subtitle>Comunicação entre Servidor e Base de Dados (MongoDB)</subtitle>
+        <bdate>4 de Novembro de 2019</bdate>
+        <edate>11 de Novembro de 2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A75569</identifier>
+            <name>João Pedro Lima Cardoso Leal</name>
+            <email>a75569@alunos.uminho.pt</email>
+            <photo path="./shaman.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p> Para o TPC desta semana, foi-nos proposto a criação de uma API de comunicação com uma
+            Base de Dados (<i>MongoDB</i>) e de um servidor que comunicasse com esta mesma API de
+            modo a apresentar informação relevante aos filmes presentes na BD, usufruindo do
+                <i>Express</i> e do <i>Axios</i> para o efeito.</p>
+        
+        <p> O Servidor deverir responder aos seguintes pedidos: <b>GET '/'</b> (que lista os métodos
+            da API), <b>GET '/filmes'</b> (que apresenta a lista de filmes), <b>GET '/filmes/:id</b>
+            (que apresenta toda a informação de um filme com determinado ':id'), <b>GET
+                '/filmes/inserir</b> (apresenta o formulário de registo de um Filme),<b>POST
+                '/filmes'</b> (que permite adicionar um novo filme à BD), <b>DELETE '/filmes/:id</b>
+            (que remove o filme em questão da BD) </p>
+        
+        <p> Para efetuar pedidos à API, apartir de uma outra rota, recorremos ao <i>Axios</i> que é
+            uma libraria <i>Javascript</i> bastante popular que permite-nos efetuar pedidos HTTP. É
+            um libraria <i>promise-based</i>, o que nos permite escrever código assíncrono.
+            Recorremos também ao <i>mongoose</i> que é uma ferramenta que nos permite trabalhar com
+            documentos presentes na Base de Dados em MongoDB.</p>
+        
+        <p> Os resultados obtidos na resolução deste TPC, mostram-se favoráveis e podem ser
+            observados em <i>filmes</i> (presente nos <i>deliverables</i> abaixo). 
+        </p>
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/pr/pr.dtd">pr.dtd</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/pr/pr.xml">pr.xml</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/pr/pr.xsl">pr.xsl</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/pr/pr.html">pr.html</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/movies">filmes</deliverable>
+    </deliverables>
+</pr>

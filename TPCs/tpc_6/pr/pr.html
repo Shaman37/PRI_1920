@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <head>
+      <title>TPC 6</title>
+      <meta charset="UTF-8"></meta>
+      <style>
+         h1,
+         h2,
+         h3,
+         h4 {
+         text-align: center;
+         }
+         th {
+         text-align: right;
+         }
+         img {
+         border-radius: 50%;
+         }
+         
+         .tab {
+         border-collapse: collapse;
+         width: 100%;
+         } 
+         .tab th {
+         
+         padding: 8px;
+         text-align: center;
+         border-bottom: 1px solid #ddd;
+         }
+         .tab td {
+         
+         padding: 8px;
+         text-align: center;
+         border-bottom: 1px solid #ddd;
+         } 
+         .tab tr:hover {
+         background-color:#f5f5f5;
+         }
+         div {
+         text-align: center;
+         }
+         
+      </style>
+   </head>
+   <body>
+      <h1>TPC 6</h1>
+      
+      <h4>PRI-A75569-TPC6</h4>
+      <hr width="80%"></hr>
+      <table class="tab">
+         <tr>
+            <th colspan="3">Supervisor: </th>
+            <td colspan="3">
+               <a target="blank" href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</a>
+            </td>
+         </tr>
+         <tr>
+            <th colspan="3">Email:</th>
+            <td colspan="3">
+               <a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a>
+            </td>
+         </tr>
+         <tr>
+            <th>Begin Date: </th>
+            <td>4 de Novembro de 2019</td>
+            <td>|</td>
+            <td>|</td>
+            <th>End Date: </th>
+            <td>11 de Novembro de 2019</td>
+         </tr>
+      </table>
+      <hr width="65%"></hr>
+      
+      <h2>Equipa</h2>
+      
+      <table class="tab">
+         <tr>
+            <td rowspan="4" width="50%">
+               <img src="./shaman.jpg" width="15%"></img>
+            </td>
+            <th colspan="2">Student ID:</th>
+            <td align="center">A75569</td>
+         </tr>
+         <tr>
+            <th colspan="2">Nome:</th>
+            <td align="center">João Pedro Lima Cardoso Leal</td>
+         </tr>
+         <tr>
+            <th colspan="2">Email:</th>
+            <td align="center">
+               <a href="mailto:a75569@alunos.uminho.pt">a75569@alunos.uminho.pt</a>
+            </td>
+         </tr>
+         <tr>
+            <th colspan="2">Github:</th>
+            <td align="center">
+               <a target="blank" href="https://github.com/Shaman37">
+                  https://github.com/Shaman37
+                  
+               </a>
+            </td>
+         </tr>
+      </table>
+      <hr width="50%"></hr>
+      
+      
+      <h2>Servidores em NodeJS + Express</h2>
+      <h4>Comunicação entre Servidor e Base de Dados (MongoDB)</h4>
+      <br></br>
+      
+      <p align="center"> Para o TPC desta semana, foi-nos proposto a criação de uma API de comunicação com
+         uma
+         Base de Dados (
+         <i>MongoDB</i>) e de um servidor que comunicasse com esta mesma API de
+         modo a apresentar informação relevante aos filmes presentes na BD, usufruindo do
+         
+         <i>Express</i> e do 
+         <i>Axios</i> para o efeito.
+      </p>
+      
+      
+      <p align="center"> O Servidor deverir responder aos seguintes pedidos: 
+         <b>GET '/'</b> (que lista os métodos
+         da API), 
+         <b>GET '/filmes'</b> (que apresenta a lista de filmes), 
+         <b>GET '/filmes/:id</b>
+         (que apresenta toda a informação de um filme com determinado ':id'), 
+         <b>GET
+            '/filmes/inserir
+         </b> (apresenta o formulário de registo de um Filme),
+         <b>POST
+            '/filmes'
+         </b> (que permite adicionar um novo filme à BD), 
+         <b>DELETE '/filmes/:id</b>
+         (que remove o filme em questão da BD) 
+      </p>
+      
+      
+      <p align="center"> Para efetuar pedidos à API, apartir de uma outra rota, recorremos ao 
+         <i>Axios</i> que é
+         uma libraria 
+         <i>Javascript</i> bastante popular que permite-nos efetuar pedidos HTTP. É
+         um libraria 
+         <i>promise-based</i>, o que nos permite escrever código assíncrono.
+         Recorremos também ao 
+         <i>mongoose</i> que é uma ferramenta que nos permite trabalhar com
+         documentos presentes na Base de Dados em MongoDB.
+      </p>
+      
+      
+      <p align="center"> Os resultados obtidos na resolução deste TPC, mostram-se favoráveis e podem ser
+         observados em 
+         <i>filmes</i> (presente nos 
+         <i>deliverables</i> abaixo). 
+         
+      </p>
+      
+      
+      <hr width="40%"></hr>
+      
+      <h2 align="center">Deliverables</h2>
+      <table class="tab">
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/pr/pr.dtd">pr.dtd</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/pr/pr.xml">pr.xml</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/pr/pr.xsl">pr.xsl</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/pr/pr.html">pr.html</a>
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <a target="blank" href="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_6/movies">filmes</a>
+            </td>
+         </tr>
+         
+      </table>
+      
+      <hr width="75%"></hr>
+      <div>11/11/2019</div>
+   </body>
+</html>
