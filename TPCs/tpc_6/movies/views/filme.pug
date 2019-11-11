@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-row.w3-amber
+                .w3-container.w3-third.w3-left-align
+                    br  
+                    a(href="/filmes")
+                        i.fa.fa-arrow-left.fa-3x
+
+                .w3-container.w3-third.w3-center                        
+                    h3 #{filme.title}
+                    h5 (#{filme.year})     
+
+        br
+        .w3-row
+            .w3-third.w3-container.w3-center
+                img(src=poster width="75%")
+
+            .w3-container.w3-twothird
+                table.w3-table.w3-bordered
+                    tr.w3-large
+                        td 
+                            b Plot:
+                        td.w3-left=plot
+
+                    tr.w3-large
+                        td 
+                            b Cast:
+                        td.w3-left=filme.cast
+
+                    tr.w3-large
+                        td 
+                            b Genre:
+                        td.w3-left=filme.genres
+
+                    tr.w3-large
+                        td(width="15%")
+                            b Release Date:
+                        td=release_date
+                    
+                    tr.w3-large
+                        td(width="15%")
+                            b Rating:
+                        td #{rating} / 10.0 
+                            .w3-small (#{total_votes}) votes

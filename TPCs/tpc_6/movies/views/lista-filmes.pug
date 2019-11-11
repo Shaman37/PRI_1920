@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-row.w3-amber
+                .w3-container.w3-third.w3-left-align  
+                    br
+                    a(href="../")
+                        i.fa.fa-arrow-left.fa-3x
+
+                .w3-container.w3-third.w3-center                        
+                  h1 Lista de Filmes ~ PRI 2019 - TPC 6 
+                  br       
+
+                .w3-container.w3-third.w3-right-align
+                    br
+                    a(href="./filmes/inserir")
+                        i.fa.fa-plus-square.fa-3x
+
+    br
+    table.w3-table-all.w3-hoverable
+      tr
+        th.w3-center.w3-xlarge Year
+        th.w3-left.w3-xlarge Title
+        th
+      
+      each filme in lista
+        tr
+          td.w3-center (#{filme.year})
+          
+          td.w3-left
+            b #{filme.title}
+
+          td.w3-container.w3-right
+              .w3-button.w3-red.w3-round-xxlarge(onclick="apagaFilme('" + filme._id +"')") Remover Filme
+
+          td.w3-center
+            a(href="/filmes/"+filme._id)
+              i.fa.fa-arrow-right.fa-2x
+          
