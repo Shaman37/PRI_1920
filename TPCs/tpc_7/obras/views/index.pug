@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .w3-container
+        .w3-card-4
+            header.w3-container.w3-amber.w3-center
+                  h1 API de Obras ~ PRI 2019 - TPC 7  
+  
+  table.w3-table.w3-bordered
+    tr
+        th.w3-center.w3-xlarge Método
+        th.w3-center.w3-xlarge Descrição
+        th
+
+    tr.w3-large
+      td.w3-center Listar Obras
+        
+      td.w3-center Método utilizado para listar todas os obras presentes na Base de Dados
+    
+      td.w3-center
+        a(href="http://localhost:3000/obras") Listar Obras
+    
+    tr.w3-large
+      td.w3-center Listar Compositores
+        
+      td.w3-center Método utilizado para listar todos os compositores presentes na Base de Dados
+    
+      td.w3-center
+        a(href="http://localhost:3000/compositores") Listar Compositores

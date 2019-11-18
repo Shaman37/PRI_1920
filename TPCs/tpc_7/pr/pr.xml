@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRI-A75569-TPC7</keyname>
+        <title>Servidores em NodeJS + Express</title>
+        <subtitle>Criação de API de Dados</subtitle>
+        <bdate>11 de Novembro de 2019</bdate>
+        <edate>18 de Novembro de 2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A75569</identifier>
+            <name>João Pedro Lima Cardoso Leal</name>
+            <email>a75569@alunos.uminho.pt</email>
+            <photo path="./shaman.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p> Neste último TPC, foi pedido para fazer uma API de dados, utilizando as ferramentas dadas anteriormente (MongoDB e Express.js), sobre um dataset de compositores e obras de música clássica.
+        </p>
+        <p>
+            Assim, este TPC foi uma consolidação dos conceitos abordados anteriormente, podendos os resultados serem observados nos deliverables.
+        </p>
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_7/pr/pr.dtd">pr.dtd</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_7/pr/pr.xml">pr.xml</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_7/pr/pr.xsl">pr.xsl</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_7/pr/pr.html">pr.html</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/TPCs/tpc_7/obras">obras</deliverable>
+    </deliverables>
+</pr>
