@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRI-A75569-TPC7</keyname>
+        <title>Teste de PRI 2020</title>
+        <subtitle>Desenvolvimente de Aplicações WEB</subtitle>
+        <bdate>13 de Janeiro de 2020</bdate>
+        <edate>13 de Janeiro de 2020</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A75569</identifier>
+            <name>João Pedro Lima Cardoso Leal</name>
+            <email>a75569@alunos.uminho.pt</email>
+            <photo path="./shaman.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+        Para o primeiro exercício foi-nos dado um dataset apartir com o objetivo de criar uma API à volta deste. Primeiramente foi corrigido o dataset (em JSON) fornecido, onde havia erros de identação, sintaxe ou caracteres extra. Para tal correção foi usada uma ferraamenta online de validação de ficheiros JSON. Seguidamente, foi importado esse ficheiro para uma coleção no MongoDB, através do comando "mongoimport -d publicacoes -c publicacoes --jsonArray jcrpubs.json", sendo gerada, logo de seguida, a base do servidor apartir do comando "npx express-generator --view=pug pri_teste". Em sefuida, após ter a coleção importada e a base do servidor montada, procedi à construção dos "Models" e dos "Controllers", de forma a responder às queries pedidas. Por fim, restava o desenvolvimento das "Rotas" pedidas no enunciado, sendo o seu resultado apresentado em JSON puro.
+        Já no segundo exercício, foi pedido para consumir a API do CLAV, sendo fornecida a "apikey" para o propósito e para a autenticação, sendo também necessária a criação de uma interface de modo a permitir uma navegação entre as tipologias e as entidades. Neste exercício, não foi preciso desenvolver ntanto "Models" como "Controllers" uma vez apenas seria necessario consumir a API e apresentar os resultados pretendidos. 
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/Teste/ex2">Exercício 1</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/Teste/ex1">Exercício 2</deliverable>
+        <deliverable path="https://github.com/Shaman37/PRI_1920/tree/master/Teste/pr.xml">Project Record</deliverable>
+    </deliverables>
+</pr>
